@@ -1,0 +1,138 @@
+    :root {
+      --primary: #2d6a4f;
+      --accent: #f4a261;
+      --light: #f1faee;
+      --dark: #1d3557;
+      --bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary), #40916c);
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .hero-content {
+      flex: 1 1 50%;
+    }
+
+    .hero-image {
+      flex: 1 1 40%;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      margin-bottom: 20px;
+    }
+
+    .hero-buttons a {
+      text-decoration: none;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .features, .impact-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .feature, .impact {
+      flex: 1 1 250px;
+      background: var(--light);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .impact {
+      font-weight: bold;
+      color: white;
+    }
+
+    .petani { background-color: #f4a100; }
+    .transport1 { background-color: #6a994e; }
+    .transport2 { background-color: #b5ead7; color: #1d1d1d; }
+    .sosial { background-color: #ffb703; }
+    .hijau { background-color: #2a9d8f; }
+
+    .testimonials {
+      background: #e0f7f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .quote {
+      background: white;
+      padding: 20px;
+      border-left: 5px solid var(--primary);
+      margin: 10px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-image, .hero-content {
+        flex: 1 1 100%;
+      }
+    }
